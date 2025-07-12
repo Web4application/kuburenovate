@@ -11,3 +11,13 @@ cd cli
 npm init -y
 npm install bullmq ioredis @octokit/rest fastify
 # or use `pnpm` / `yarn`
+docker-compose up redis
+cd api && uvicorn main:app --reload
+
+npx ts-node cli/index.ts scan
+
+$ generate npm update logic
+
+$ add AI changelog summarizer
+$ add Python/Go module scanner
+$ generate dashboard UI
